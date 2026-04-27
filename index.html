@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Finder</title>
+</head>
+<body>
+
+<h2>Apply for Jobs 💼</h2>
+
+<form onsubmit="submitForm(event)">
+  <input type="text" id="name" placeholder="Enter your name" required><br><br>
+  <input type="text" id="phone" placeholder="Enter phone number" required><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+let email = document.getElementById("phone").value;
+let DOB = document.getElementById("phone").value;
+let Adhaar number = document.getElementById("phone").value;
+let Qualification = document.getElementById("phone").value;
+let current address = document.getElementById("phone").value;
+
+  document.getElementById("msg").innerHTML =
+    "Thanks " + name + "! We will contact you soon.";
+
+  console.log("Lead:", name, phone);
+}
+</script>
+
+</body>
+</html>
